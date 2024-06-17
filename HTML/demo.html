@@ -1,0 +1,39 @@
+<input id="num1" placeholder="Enter num1">
+<input id="num2" placeholder="Enter num2   "> <br>
+ <button onclick="add()">Add</button><br>
+ <button onclick="subtract()">Subtract</button><br>
+ <button onclick="mul()">Multiply</button><br>
+ <button onclick="div()">Divide</button><br>
+ <p id="r">Result</p>
+ <script>
+        var box1=document.getElementById("num1")
+        var box2=document.getElementById("num2")
+        var result=document.getElementById("r")
+       
+         
+        function add(){
+            var b1=Number(box1.value) 
+            var b2=Number(box2.value) 
+            var total=b1+b2
+            r.textContent=total
+        }
+        function subtract(){
+            var b1=Number(box1.value) 
+            var b2=Number(box2.value) 
+            var total=b1-b2
+            r.textContent=total
+        }
+        function mul(){
+            var b1=Number(box1.value) 
+            var b2=Number(box2.value) 
+            var total=b1*b2
+            r.textContent=total
+        }
+        function div(){
+            var b1=Number(box1.value) 
+            var b2=Number(box2.value) 
+            var total=b1/b2
+            r.textContent=total
+        }
+
+ </script>
